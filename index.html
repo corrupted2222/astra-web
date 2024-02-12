@@ -111,19 +111,21 @@ body {
     background-color: grey;
 }
 
+@media (max-width: 1024px) {
+    .card img {
+        position: relative;
+    right: -80%;
+    top: -55px;
+    }
+}
+
+
 @media (max-width: 768px) {
     .container {
         position: relative;
         right: 3%;
     }
-    
-  
-    .card img {
-        position: relative;
-    right: -80%; /* Adjusted position based on percentage */
-    top: -55px; /* Adjusted position based on percentage */
-    }
-        }
+}
 
 @media (max-width: 480px) {
             .card-grid {
@@ -150,6 +152,12 @@ body {
     .container {
         position: relative;
         max-width: 80%;
+    }
+
+    .card img {
+        position: relative;
+    right: -80%; /* Adjusted position based on percentage */
+    top: -55px; /* Adjusted position based on percentage */
     }
         }
 
