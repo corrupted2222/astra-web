@@ -131,8 +131,9 @@ body {
     
     .card img {
         position: relative;
-        right: -80%; /* Adjusted position based on percentage */
-        top: -140%; /* Adjusted position based on percentage */
+        left: 180px;
+        right: -190px;
+        top: -60px; 
     }
 }
 
@@ -145,13 +146,17 @@ body {
 @media (max-width: 320px) {
     .container {
         position: relative;
+        max-width: 90%;
         right: -4%;
     }
 
-      .card img {
-      position: relative;
-      top: 15%;
+    .card img {
+        position: relative;
+        left: 180px;
+        right: -190px;
+        top: -60px; 
     }
+
 }
 
 @media (max-width: 375px) {
@@ -170,11 +175,13 @@ body {
     .container {
         position: relative;
         right: -2%;
+        max-width: auto;
     }
 
         .card img {
         position: relative;
-        top: 15%;
+        left: auto;
+        top: -55px;
     }
 }
     </style>
