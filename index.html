@@ -13,9 +13,15 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Astra</title>
 
+    <!-- EMBED -->
+
+    <meta property="og:title" content="Astra">
+    <meta property="og:description" content="This website is designed for sideloading and discovering Roblox scripts.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1023470216140820530/1206518206114570291/Untitled_image_2.png?ex=65dc4ca4&is=65c9d7a4&hm=08837900114a42643e47a0b981bdfe61f3ed18c732b9ee06ad09dfc6d3cd4282&">
+    <meta property="og:url" content="https://www.astra-ipa.com">
+
     <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -26,7 +32,7 @@ body {
     margin-top: 2px;
     margin-left: 4px;
     color: white;
-    font-family: sans-serif;
+    font-family: 'CustomFont';
     font-size: 30px;
 }
 
@@ -71,9 +77,15 @@ body {
     top: -140%; /* Adjusted position based on percentage */
 }
 
+/* Define custom font */
+@font-face {
+    font-family: 'CustomFont';
+    src: url('font/Nunito-VariableFont_wght.ttf') format('truetype');
+}
+
 .card h3 {
     color: black;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'CustomFont'; /* Use the custom font */
     margin-top: 1px;
     margin-right: -20%; /* Adjusted position based on percentage */
     margin-left: -15%; /* Adjusted position based on percentage */
@@ -99,7 +111,7 @@ body {
     transform: translateX(-50%);
     background-color: black;
     color: white;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'CustomFont';
     border: none;
     padding: 13px 50px;
     border-radius: 5px;
@@ -111,68 +123,68 @@ body {
     background-color: grey;
 }
 
-@media (max-width: 1024px) {
-    .card img {
-        position: relative;
-    right: -77%;
-    top: -85px;
-    }
-}
-
-
 @media (max-width: 768px) {
     .container {
         position: relative;
         right: 3%;
     }
+    
+    .card img {
+        position: relative;
+        right: -80%; /* Adjusted position based on percentage */
+        top: -140%; /* Adjusted position based on percentage */
+    }
 }
 
 @media (max-width: 480px) {
-            .card-grid {
-                grid-template-columns: 1fr;
-                right: 2%;
-            }
-        }
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-        @media (max-width: 320px) {
+@media (max-width: 320px) {
     .container {
         position: relative;
         right: -4%;
     }
-        }
 
-        @media (max-width: 375px) {
+      .card img {
+      position: relative;
+      top: 15%;
+    }
+}
+
+@media (max-width: 375px) {
     .container {
         position: relative;
         right: 1%;
     }
-        }
 
-        @media (max-width: 425px) {
+      .card img {
+      position: relative;
+      top: 15%;
+    }
+}
+
+@media (max-width: 425px) {
     .container {
         position: relative;
-        max-width: 80%;
+        right: -2%;
     }
 
-    .card img {
+        .card img {
         position: relative;
-    right: -80%; /* Adjusted position based on percentage */
-    top: -55px; /* Adjusted position based on percentage */
+        top: 15%;
     }
-        }
-
-
-
+}
     </style>
 </head>
 <body>
-
-
     <ins class="adsbygoogle"
-    style="display:block"
-    data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-    data-ad-slot="xxxxxxxxxx"
-    data-ad-format="auto"></ins>
+        style="display:block"
+        data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
+        data-ad-slot="xxxxxxxxxx"
+        data-ad-format="auto"></ins>
     <script>
     (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
@@ -243,7 +255,5 @@ body {
             renderCards("");
         });
     </script>
-
-
 </body>
 </html>
